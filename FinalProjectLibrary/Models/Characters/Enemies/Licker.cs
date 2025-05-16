@@ -21,7 +21,6 @@ namespace FinalProjectLibrary.Models.Characters.Enemy
             {
                 Console.WriteLine($"{Name} has been defeated!", ConsoleColor.Red);
                 Room.RemoveCharacter(this);
-                Environment.Exit(0);
             }
         }
 
