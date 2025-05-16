@@ -80,7 +80,6 @@ namespace FinalProject.Menu
 
         private void DisplayCharacters()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Displaying all characters:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
 
@@ -96,7 +95,6 @@ namespace FinalProject.Menu
 
         private void AddCharacter()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Adding a new character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
             _outputManager.Write("Enter character name: ");
@@ -160,7 +158,6 @@ namespace FinalProject.Menu
 
         private void RemoveCharacter()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Removing a character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Display();
@@ -209,7 +206,6 @@ namespace FinalProject.Menu
 
         private void EditCharacter()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Editing a character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Display();
@@ -278,7 +274,6 @@ namespace FinalProject.Menu
 
         private void SearchCharacter()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Searching for a character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Write("Enter character's full name to search: ");
@@ -311,7 +306,6 @@ namespace FinalProject.Menu
 
         private void DisplayAbilities()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Display a character's abilities:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Display();
@@ -369,7 +363,6 @@ namespace FinalProject.Menu
 
         private void AddAbility()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Adding an ability to a character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Display();
@@ -453,7 +446,6 @@ namespace FinalProject.Menu
 
         public void RemoveAbility()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Removing an ability from a character:", ConsoleColor.Cyan);
             _outputManager.WriteLine($"--------------------------\n", ConsoleColor.Magenta);
             _outputManager.Display();

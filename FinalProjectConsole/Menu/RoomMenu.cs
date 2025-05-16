@@ -136,7 +136,6 @@ namespace FinalProject.Menu
         }
         private void ListByAttribute()
         {
-            _outputManager.Clear();
 
             var rooms = _context.Rooms.ToList();
             if (rooms.Count == 0)

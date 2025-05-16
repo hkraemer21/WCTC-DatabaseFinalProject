@@ -60,6 +60,7 @@ namespace FinalProject.Services
                     break;
                 case "2":
                     _adminMenu.Run();
+                    MainMenu();
                     break;
                 case "3":
                     Environment.Exit(0);

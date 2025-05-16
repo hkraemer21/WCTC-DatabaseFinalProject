@@ -61,6 +61,7 @@ namespace FinalProject.Menu
 
         private void SortSubmenu()
         {
+            _outputManager.Clear();
             _outputManager.WriteLine($"\n--------------------------\n", ConsoleColor.Magenta);
             _outputManager.WriteLine("Sort Options", ConsoleColor.Cyan);
             _outputManager.WriteLine("1. Sort by Name");
@@ -104,7 +105,6 @@ namespace FinalProject.Menu
 
         public void DisplayAllItems()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
 
             var items = _context.Items.ToList();
@@ -309,7 +309,6 @@ namespace FinalProject.Menu
 
         private void SearchByName()
         {
-            _outputManager.Clear();
 
             var name = _context.Items.ToList();
             foreach (var n in name)
@@ -348,7 +347,6 @@ namespace FinalProject.Menu
 
         private void ListByType()
         {
-            _outputManager.Clear();
             _outputManager.WriteLine("Enter the type of item to list (Weapon/FirstAid/KeyItem):", ConsoleColor.Cyan);
             _outputManager.Display();
 
@@ -386,7 +384,6 @@ namespace FinalProject.Menu
         private void SortByName()
         {
 
-            _outputManager.Clear();
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
 
             var items = _context.Items.OrderBy(i => i.Name).ToList();
@@ -400,7 +397,6 @@ namespace FinalProject.Menu
         private void SortByDamage()
         {
 
-            _outputManager.Clear();
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
 
             var items = _context.Items.OfType<Weapon>().OrderBy(i => i.Damage).ToList();
@@ -414,7 +410,6 @@ namespace FinalProject.Menu
         private void SortByHealing()
         {
 
-            _outputManager.Clear();
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
 
             var items = _context.Items.OfType<FirstAid>().OrderBy(i => i.Healing).ToList();
@@ -428,7 +423,6 @@ namespace FinalProject.Menu
         private void SortByWasUsed()
         {
 
-            _outputManager.Clear();
             _outputManager.WriteLine($"--------------------------", ConsoleColor.Magenta);
 
             var items = _context.Items.OfType<KeyItem>().OrderBy(i => i.WasUsed).ToList();
